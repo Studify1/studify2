@@ -11,12 +11,21 @@
         <h4>YOU CAN GET PDF BY JUST CLICK AS SIMPLE</h4>
     </div>
     <div>
-   <strong> 2025 Maneb Past Papers</strong><br>
-   </div> 
-  <div class="container"> 
+   <strong>Maneb past papers from 2025</strong><br>
+   <div id="pdfContainer" class="collapsible-section closed">
+
+        <div class="control-bar" onclick="toggleViewer('pdfContainer')">
+            <span>English past papers from 2025</span>
+            <span id="pdfContainerToggle" class="toggle-icon">&#9660;</span> 
+        </div>
+        <div class="container">
+            <strong>2025</strong> 
     <div class="item" ><a href="MPP/ENG PAPER I.pdf"><button>ENGLISH PP1</button></a>
     <a href="MPP/ENG PAPER II.pdf"><button>ENGLISH PP2</button></a>
-<a href="MPP/ENG PAP III.pdf"><button>ENGLISH PP3</button></a></div>
+<a href="MPP/ENG PAP III.pdf"><button>ENGLISH PP3</button></a></div>  
+    </div>
+   </div> 
+  
 <div class="item" >
     <a href="MPP/2025 MSCE  CHICHEWA pp1.pdf"><button>CHICHEWA PP1</button></a><a href=""><button>CHICHEWA PP2#</button></a> <a href=""><button>CHICHEWA PPP2#</button></a>
 </div><div class="item"><a href="MPP/MATHS PP1.pdf"><button>MATHS PAPER 1</button></a>
@@ -46,7 +55,25 @@
  <FOoter class="FOoter">
   <P> 2025 free pdf download</P>  
   <p>donation and support <br> call/whatsapp
-  :0996209934 </p>
+  :0996209934 </p><script>
+        // Modified function to handle both containers
+        function toggleViewer(containerId) {
+            const container = document.getElementById(containerId);
+            const icon = document.getElementById(containerId + 'Toggle');
+
+            if (container.classList.contains('closed')) {
+                // Open it
+                container.classList.remove('closed');
+                container.classList.add('open');
+            } else {
+                // Close it
+                container.classList.remove('open');
+                container.classList.add('closed');
+            }
+        }
+    </script>
+
+
  
 </body>
 </html>
